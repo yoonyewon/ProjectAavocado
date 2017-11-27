@@ -19,8 +19,8 @@ public class LoginView extends JFrame{
 		tf_id = new JTextField();			  
 		tf_pass = new JPasswordField();
 		
-		bt_login = new JButton("·Î±×ÀÎ");
-		bt_join = new JButton("½Å±Ô°¡ÀÔ");
+		bt_login = new JButton("ë¡œê·¸ì¸");
+		bt_join = new JButton("íšŒì›ê°€ì…");
 	
 	    la_id = new JLabel("I  D");
 		la_pass = new JLabel("Password");
