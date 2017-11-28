@@ -10,46 +10,45 @@ import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 public class PlayerView extends JFrame {
-	public JButton bt_top, bt_latest, bt_add, bt_select, bt_toPlayer ;
+	public JButton bt_top, bt_latest, bt_add, bt_select, bt_toPlayer;
 	public JTable table_chart;
 	public JTextField tf_select;
 	public JComboBox<String> combo;
 	DefaultTableModel dtm;
-	
+
 	public PlayerView() {
 		setTitle("AVOCADO Music List");
 		Object rowData[][] = new String[0][1];
-		Object colNames[] = {"¡¶∏Ò","∞°ºˆ"};
-		
+		Object colNames[] = { "Ï†úÎ™©", "Í∞ÄÏàò" };
+
 		dtm = new DefaultTableModel(rowData, colNames);
 		table_chart = new JTable(dtm);
 		JScrollPane scrol_table = new JScrollPane(table_chart);
-		scrol_table.setBounds(140,100,340,300); 
-				
+		scrol_table.setBounds(140, 100, 340, 300);
+
 		tf_select = new JTextField();
-		tf_select.setBounds(140,55,245,30);
-		
-		bt_select = new JButton("∞Àªˆ");
+		tf_select.setBounds(140, 55, 245, 30);
+
+		bt_select = new JButton("Í≤ÄÏÉâ");
 		bt_top = new JButton("TOP 20");
-		bt_latest = new JButton("√÷Ω≈∞Ó");
-		bt_add = new JButton("√ﬂ∞°«œ±‚");
+		bt_latest = new JButton("ÏµúÏã†Í≥°");
+		bt_add = new JButton("Ï∂îÍ∞ÄÌïòÍ∏∞");
 		bt_toPlayer = new JButton(">");
 
-		
-		bt_select.setBounds(395,55,80,30);
-		bt_top.setBounds(20,100,100,30);
-		bt_latest.setBounds(20,140,100,30);
-		bt_add.setBounds(385,410,95,30);
-		bt_toPlayer.setBounds(430,20,45,30);
-		
+		bt_select.setBounds(395, 55, 80, 30);
+		bt_top.setBounds(20, 100, 100, 30);
+		bt_latest.setBounds(20, 140, 100, 30);
+		bt_add.setBounds(385, 410, 95, 30);
+		bt_toPlayer.setBounds(430, 20, 45, 30);
+
 		combo = new JComboBox<>();
-			combo.addItem("--¿Â∏£º±≈√--");
-			combo.addItem("πﬂ∂ÛµÂ");
-			combo.addItem("»¸«’");
-			combo.addItem("∆À");
-			combo.addItem("∆Æ∑Œ∆Æ");
-			combo.setBounds(20,180,100,30);
-		
+		combo.addItem("--Ïû•Î•¥ÏÑ†ÌÉù--");
+		combo.addItem("Î∞úÎùºÎìú");
+		combo.addItem("ÌûôÌï©");
+		combo.addItem("Ìåù");
+		combo.addItem("Ìä∏Î°úÌä∏");
+		combo.setBounds(20, 180, 100, 30);
+
 		setLayout(null);
 		add(bt_select);
 		add(bt_top);
@@ -59,13 +58,12 @@ public class PlayerView extends JFrame {
 		add(bt_toPlayer);
 		add(scrol_table);
 		add(tf_select);
-		
-		setBounds(400,200,500,490);
+
+		setBounds(400, 200, 500, 490);
 		setVisible(true);
 		setResizable(false);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		
+
 	}
-	
 
 }

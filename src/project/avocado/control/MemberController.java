@@ -20,22 +20,17 @@ public class MemberController implements ActionListener{
 		
 		eventup();
 	}
-	
-	
-	
-	
-	
-	
+
 	private void eventup() {
 		
-		//È¸¿ø°¡ÀÔ
+		//È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		join.submit_bt.addActionListener(this);
 		join.cancle_bt.addActionListener(this);
 		
-		//·Î±×ÀÎ
+		//ï¿½Î±ï¿½ï¿½ï¿½
 		login.bt_login.addActionListener(this);
 		login.bt_join.addActionListener(this);
-		//È¸¿ø°¡ÀÔ XÃ³¸®
+		//È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ XÃ³ï¿½ï¿½
 		join.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
 				super.windowClosing(e);
@@ -43,7 +38,7 @@ public class MemberController implements ActionListener{
 				login.setVisible(true);
 			}
 		});
-		//·Î±×ÀÎXÃ³¸®
+		//ï¿½Î±ï¿½ï¿½ï¿½XÃ³ï¿½ï¿½
 		login.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
